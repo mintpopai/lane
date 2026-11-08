@@ -30,7 +30,8 @@ body:
       description: 桌面客户端问题必填 / Required for desktop app issues
       options:
         - macOS（Apple 芯片 / Apple silicon）
-        - Windows 10 / 11（x64）
+        - Windows 11（x64）
+        - Windows 10（x64）
         - Ubuntu / Linux（x64）
         - 不适用 / Not applicable
     validations:
