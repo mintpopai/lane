@@ -1,0 +1,82 @@
+name: 🐞 Bug 反馈 / Bug report
+description: 客户端、控制台或官网出了问题 / Something is broken in the app, console or website
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈！提交前请先搜索已有 issue，避免重复。
+        Thanks for reporting! Please search existing issues first.
+
+        > ⚠️ **Issue 是公开的**：请勿填写账号邮箱、订单号、token、IP 地址等个人信息。账号、订单类问题请走 [联系我们](https://mintpop.ai/zh/contact)。
+        > **Issues are public**: do not include account emails, order numbers, tokens or IP addresses. For account or order issues, please [contact us](https://mintpop.ai/contact).
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: 出问题的部分 / Component
+      options:
+        - 桌面客户端 / Desktop app
+        - 用户控制台 / Console (console.lane.mintpop.ai)
+        - 官网 / Website (lane.mintpop.ai)
+        - 其他 / Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: 操作系统 / Operating system
+      description: 桌面客户端问题必填 / Required for desktop app issues
+      options:
+        - macOS（Apple 芯片 / Apple silicon）
+        - Windows 10 / 11（x64）
+        - Ubuntu / Linux（x64）
+        - 不适用 / Not applicable
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 客户端版本 / App version
+      description: 在客户端「关于」里查看，如 1.8.0 / Find it in the app's About page, e.g. 1.8.0
+      placeholder: "1.8.0"
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 问题描述 / What happened
+      description: 发生了什么？有报错提示请原文贴出 / Describe the problem; paste any error message verbatim
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤 / Steps to reproduce
+      placeholder: |
+        1. 打开客户端 / Open the app
+        2. 点击… / Click…
+        3. 看到… / See…
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果 / Expected behavior
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图 / Screenshots
+      description: 可直接粘贴或拖入图片；贴图前请遮掉邮箱、IP 等信息 / Paste or drag images here; redact emails and IPs first
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认 / Confirmation
+      options:
+        - label: 我已搜索过已有 issue，且内容不含个人信息 / I searched existing issues and removed personal information
+          required: true

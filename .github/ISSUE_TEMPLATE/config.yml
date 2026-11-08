@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 使用咨询 / Questions
+    url: https://github.com/mintpopai/lane/discussions
+    about: 用法咨询、经验交流请到 Discussions / Ask questions and share tips in Discussions
+  - name: 🔒 账号与订单 / Account and orders
+    url: https://mintpop.ai/zh/contact
+    about: 涉及个人信息的问题请私下联系，不要发公开 issue / Contact us privately; don't post personal details in public issues
+  - name: 🌐 官网与常见问题 / Website and FAQ
+    url: https://lane.mintpop.ai/#faq
+    about: 购买前的常见疑问 / Answers to common pre-purchase questions
